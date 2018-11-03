@@ -31,13 +31,11 @@ YOLO 와 OpenCv를 이용해서 물체를 찾고 분류한다.
 
 input image
 
-![](object-detector/data/dog.jpg)
+ ![alt text](object-detector/data/dog.jpg)
 
 Output image
 
-![](object-detector/data/object-detection.jpg)
-
-
+![alt text](object-detector/data/object-detection.jpg)
 
 
 
@@ -47,9 +45,5 @@ Output image
 
 
 
-
-
-
-
-`$ python yolo_opencv.py --image dog.jpg`
+​     
 
