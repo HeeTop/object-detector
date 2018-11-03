@@ -1,10 +1,3 @@
-#############################################
-# Object detection - YOLO - OpenCV
-# Author : Arun Ponnusamy   (July 16, 2018)
-# Website : http://www.arunponnusamy.com
-############################################
-
-
 import cv2
 import argparse
 import numpy as np
@@ -117,7 +110,7 @@ if args.image:
     if args.save:
         cv2.imwrite(args.save,image)
     else:
-        cv2.imwrite("object-detection.jpg", image)
+        cv2.imwrite("data/object-detection.jpg", image)
     cv2.destroyAllWindows()
 
 # video
@@ -132,7 +125,7 @@ elif args.video:
     if args.save:
         out = cv2.VideoWriter(args.save, -1, 20.0, (Width, Height))
     else:
-        out = cv2.VideoWriter('output.avi', -1, 20.0, (Width, Height))
+        out = cv2.VideoWriter('data/output.avi', -1, 20.0, (Width, Height))
     while(cap.isOpened()):
         ret, image = cap.read()
         image = cv2.resize(image,(Width,Height))
