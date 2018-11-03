@@ -4,7 +4,7 @@
 
 YOLO 와 OpenCv를 이용해서 물체를 찾고 분류한다.
 
-## 필수 사항
+## 필수사항
 
 - opencv
 - numpy
@@ -23,9 +23,11 @@ YOLO 와 OpenCv를 이용해서 물체를 찾고 분류한다.
 
 #### Command format
 
-`$ python make_video.py `
 
-`$ python yolo_opencv.py --image <image path> --save <save path>`
+
+`$ python make_video.py —save <save path>` 
+
+`$ python yolo_opencv.py --image <image path> --save <save path> `
 
 `$ python yolo_opencv.py --video <video path> --save <save path>`
 
@@ -33,7 +35,11 @@ YOLO 와 OpenCv를 이용해서 물체를 찾고 분류한다.
 
 #### Sample Output
 
-`$ python yolo_opencv.py --image dog.jpg`
+
+
+##### Image
+
+`$ python yolo_opencv.py --image data/dog.jpg`
 
 Input image
 
@@ -45,11 +51,17 @@ Output image
 
 
 
+##### Video
 
+`$ python yolo_opencv.py --video data/demo.py`
 
+Input video
 
+![demo](https://github.com/HeeTop/object-detector/blob/master/data/demo.gif)
 
+Output video
 
+![demo](https://github.com/HeeTop/object-detector/blob/master/data/output.gif)
 
 
 
