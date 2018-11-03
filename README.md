@@ -11,13 +11,19 @@ YOLO 와 OpenCv를 이용해서 물체를 찾고 분류한다.
 
 `pip install numpy opencv-python`
 
-#### 학습된 yolo weight 다운받아 줌
+#### 학습된 yolo weight 다운
+
+`$ git clone https://github.com/HeeTop/object-detector.git `
+
+`$ cd object-detector`
 
  `$ wget https://pjreddie.com/media/files/yolov3.weights`
 
 
 
 #### Command format
+
+`$ python make_video.py `
 
 `$ python yolo_opencv.py --image <image path> --save <save path>`
 
@@ -29,13 +35,19 @@ YOLO 와 OpenCv를 이용해서 물체를 찾고 분류한다.
 
 `$ python yolo_opencv.py --image dog.jpg`
 
-input image
+Input image
 
- ![alt text](object-detector/data/dog.jpg)
+ ![alt text](https://github.com/HeeTop/object-detector/blob/master/data/dog.jpg)
 
 Output image
 
-![alt text](object-detector/data/object-detection.jpg)
+![alt text](https://github.com/HeeTop/object-detector/blob/master/data/object-detection.jpg)
+
+
+
+
+
+
 
 
 
